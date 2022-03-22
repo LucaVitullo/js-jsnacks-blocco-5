@@ -49,19 +49,16 @@ const zucchine=[
     },
     {
         varietà: 'rosa',
-        peso:10,
+        peso: 10,
         lunghezza: 24,
     },
 ];
 
-    let somma=0;
+let somma = 0;
+for(let i=0; i < zucchine.length; i++){
+    somma += zucchine[i].peso;
+}
 
-    for(let i=0; i < zucchine.lenght;i++){
-        const elemento = zucchine[i].peso;
-        somma += elemento;
-
-        console.log(i)
-    }
-    console.log(somma)
+console.log(somma)
 
 
