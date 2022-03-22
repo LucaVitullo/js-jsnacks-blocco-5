@@ -73,4 +73,17 @@ for(let i = 0; i < zucchine.length; i++){
 console.log(zucchineCorte);
 console.log(zucchineLunghe);
 
+//creo una funzione per fare la somma del peso di entambi gli array
+function pesoZucchine(array){
+    let somma = 0;
+    for(let j = 0; j < array.length; j++){
+    somma += array[j].peso;
+    }
+    console.log(somma)
 
+}
+
+console.log('il peso delle zucchine corte è');
+pesoZucchine(zucchineCorte);
+console.log('il peso delle zucchine lunghe è');
+pesoZucchine(zucchineLunghe);
